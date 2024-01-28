@@ -112,14 +112,13 @@ function generate_invoice_pdf($invoice_id, $stream = true, $invoice_template = n
             $output
                 ->setPrintable(false)
                 ->getPaymentPart();
-            
-            $fpdf->Output(UPLOADS_TEMP_MPDF_FOLDER . "qr_swiss.pdf", 'F');
+
+            $fpdf->Output(UPLOADS_TEMP_MPDF_FOLDER . "qr_swiss.pdf", 'I');
         } catch (Exception $e) {
             $t = "";
             foreach ($qrBill->getViolations() as $violation) {
                 $t .= $violation->getMessage()."\n";
             }
-            file_put_contents("D:\Users\Tom\Desktop/test.txt", $t);
         }
     }
 
