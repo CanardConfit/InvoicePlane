@@ -95,6 +95,8 @@ function pdf_create(
 
     $mpdf->WriteHTML((string) $html);
 
+    file_put_contents("/var/www/canardporation.com/invoiceplan/t.log", $html);
+
     if (get_setting('qr_code_swiss')) {
         $mpdf->AddPage();
         $pageId = $mpdf->SetSourceFile(UPLOADS_TEMP_MPDF_FOLDER . "qr_swiss.pdf");

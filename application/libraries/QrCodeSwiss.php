@@ -53,7 +53,7 @@ class QrCodeSwiss {
     }
 
     $this->additionalInformation = QrBill\DataGroup\Element\AdditionalInformation::create(
-        "Facture " . $this->invoice->invoice_id
+        "Facture " . $this->invoice->invoice_number
     );
 
     $this->currency = $CI->mdl_settings->setting('qr_code_swiss_currency');

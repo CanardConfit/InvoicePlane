@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Facture</title>
+    <link rel="stylesheet"
+          href="https://invoices.canardporation.com/assets/invoiceplane/css/templates.css">
+    <link rel="stylesheet" href="https://invoices.canardporation.com/assets/core/css/custom-pdf.css">
+</head>
+<body>
+<header class="clearfix">
+
+    <div id="logo">
+            </div>
+
+    <div id="client">
+        <div>
+            <b>Sommer Monika</b>
+        </div>
+        <div>Chemin de la Gradelle 30</div><div>Chêne-Bougeries Genève 1224</div><div>Suisse</div><br/><div>Tél: +41 78 600 26 89</div>
+    </div>
+    <div id="company">
+        <div><b>Tom Andrivet</b></div>
+        <div>37B route de Pré-Marais</div><div>Bernex Genève 1233</div><div>Suisse</div><br/>    </div>
+
+</header>
+
+<main>
+
+    <div class="invoice-details clearfix">
+        <table>
+            <tr>
+                <td>Date de facture :</td>
+                <td>27/01/2024</td>
+            </tr>
+            <tr>
+                <td>Échéance: </td>
+                <td>29/02/2024</td>
+            </tr>
+            <tr>
+                <td>Montant dû: </td>
+                <td>240,00.-</td>
+            </tr>
+                            <tr>
+                    <td>Moyen de paiement : </td>
+                    <td>QR Facture</td>
+                </tr>
+                    </table>
+    </div>
+
+    <h1 class="invoice-title">Facture I20241</h1>
+
+    <table class="item-table">
+        <thead>
+        <tr>
+            <th class="item-name">Article</th>
+            <th class="item-desc">Description </th>
+            <th class="item-amount text-right">Qté</th>
+            <th class="item-price text-right">Prix</th>
+                        <th class="item-total text-right">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+
+                    <tr>
+                <td>Support en Informatique</td>
+                <td>Assistance technique personnalisée à domicile ou<br />
+en visioconférence pour résoudre les problèmes<br />
+informatiques et optimiser l&#039;expérience utilisateur.</td>
+                <td class="text-right">
+                    3,00                                            <br>
+                        <small>Heures</small>
+                                    </td>
+                <td class="text-right">
+                    80,00.-                </td>
+                                <td class="text-right">
+                    240,00.-                </td>
+            </tr>
+        
+        </tbody>
+        <tbody class="invoice-sums">
+
+        <tr>
+            <td colspan="4" class="text-right">
+                Sous-total            </td>
+            <td class="text-right">240,00.-</td>
+        </tr>
+
+        
+                    <tr>
+                <td colspan="4" class="text-right">
+                    TVA (0,00%)                </td>
+                <td class="text-right">
+                    0,00.-                </td>
+            </tr>
+        
+                
+        <tr>
+            <td colspan="4" class="text-right">
+                <b>Total</b>
+            </td>
+            <td class="text-right">
+                <b>240,00.-</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="text-right">
+                Payé            </td>
+            <td class="text-right">
+                0,00.-            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="text-right">
+                <b>Solde</b>
+            </td>
+            <td class="text-right">
+                <b>240,00.-</b>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+
+<footer>
+    </footer>
+
+</body>
+</html>
