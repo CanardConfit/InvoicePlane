@@ -276,6 +276,7 @@
 <?php endif; ?>
 
 <footer>
+    <p>Pas enregistré à la TVA</p>
     <?php if ($invoice->invoice_terms) : ?>
         <div class="notes">
             <b><?php _trans('terms'); ?></b><br/>
